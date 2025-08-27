@@ -15,7 +15,6 @@
 
     @if(activeReport() === reportType.Simplificado) {
       <div class="simplified-report">
-      <h3>Resumo dos Gastos</h3>
       <div class="simplified-bars">
         @for(item of simplifiedData; track item.despesaSimplificadaId) {
           <app-toggle-bar-item
