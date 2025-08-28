@@ -2,7 +2,9 @@ import { OrigemPreposicao } from "../app/models/origem-fonte-dados.model";
 
 export const environment = {
   //TODO adicionar API para rodar local
-  apiBase: 'https://brasil-transparente-api-492194254445.us-central1.run.app',
+  apiBase: 'http://localhost:8080',
+  pixKey: 'brasiltransparente@pm.me',
+  contactEmail: 'brasiltransparente@pm.me',
   estados: [
     { nome: 'União Federal', imagem: 'images/estados/uniao.png', id: 1, ativo: true },
     { nome: 'Rio Grande do Sul', imagem: 'images/estados/rio_grande_do_sul.png', id: 2, ativo: true },

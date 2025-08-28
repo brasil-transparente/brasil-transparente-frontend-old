@@ -14,8 +14,7 @@
             <ul class="footer-links">
                 <li class="donation-pix-item">
                     <i class="fa-brands fa-pix donation-pix-icon"></i>
-                    <!-- //TODO adicionar a cahve pix em uma env -->
-                    <span id="pix-key" class="donation-pix-key">brasiltransparente@pm.me</span>
+                    <span id="pix-key" class="donation-pix-key">{{ pixKey }}</span>
                     <button class="donation-pix-copy-btn" (click)="copyPixKey()">
                         @if(!isCopiadoClicado){
                             Copiar
@@ -28,6 +27,6 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>Transparência se constrói com dados ao alcance de todos | Contato: brasiltransparente@pm.me</p>
+        <p>Transparência se constrói com dados ao alcance de todos | Contato: {{ contactEmail }}</p>
     </div>
 </footer>
