@@ -16,7 +16,13 @@
                     <i class="fa-brands fa-pix donation-pix-icon"></i>
                     <!-- //TODO adicionar a cahve pix em uma env -->
                     <span id="pix-key" class="donation-pix-key">brasiltransparente@pm.me</span>
-                    <button class="donation-pix-copy-btn" (click)="copyPixKey()">Copiar</button>
+                    <button class="donation-pix-copy-btn" (click)="copyPixKey()">
+                        @if(!isCopiadoClicado){
+                            Copiar
+                        } @else {
+                            Copiado!
+                        }
+                    </button>
                 </li>
             </ul>
         </div>

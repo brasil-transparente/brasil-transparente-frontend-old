@@ -10,13 +10,13 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
+  isCopiadoClicado: boolean = false;
+
   copyPixKey(): void {
-    navigator.clipboard.writeText('brasiltransparente@pm.me');
-    const button = document.querySelector('.donation-pix-copy-btn');
-    if (button) button.textContent = 'Copiado!';
+    this.isCopiadoClicado = true;
 
     setTimeout(() => {
-      if (button) button.textContent = 'Copiar';
+      this.isCopiadoClicado = false;
     }, 1500);
   }
 }
